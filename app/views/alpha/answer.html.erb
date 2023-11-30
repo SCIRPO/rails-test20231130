@@ -1,0 +1,19 @@
+<h1>TEST</h1>
+
+<blockquote>
+  <cite>Your question</cite>
+  <p>
+    <% if @alpha.blank? %>
+    I have no question
+    <% else %>
+      <%= @alpha %>
+      <% end %>
+  </p>
+</blockquote>
+
+<blockquote class="answering_machine">
+  <cite>The answer</cite>
+  <p> <%= @answer %> </p>
+</blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
